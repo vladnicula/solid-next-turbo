@@ -1,0 +1,34 @@
+{
+  "name": "solidjs-exploration",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "vite": "^3.0.9",
+    "vite-plugin-dts": "^1.6.6",
+    "vite-plugin-solid": "^2.3.0"
+  },
+  "peerDependencies": {
+    "proxy-live-document": "^1.1.0"
+  },
+  "dependencies": {
+    "react-solid-bridge": "^1.0.1",
+    "solid-js": "^1.5.1"
+  }
+}
