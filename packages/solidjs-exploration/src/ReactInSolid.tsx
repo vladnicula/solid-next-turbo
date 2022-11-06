@@ -1,5 +1,4 @@
 import { createSignal, onMount } from "solid-js"
-import * as React from "react"
 import { createRoot } from "react-dom/client"
 
 export const ReactInSolid = (

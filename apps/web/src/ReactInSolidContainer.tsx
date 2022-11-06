@@ -27,7 +27,6 @@ export const ReactInSolidContainer = () => {
     }
 
     const sendingThisData = <div><p>This is JSX from react</p><StatefulReactComponent /></div>
-    console.log({sendingThisData})
     render(() => ReactInSolid({
       child: sendingThisData
     }), document.getElementById("foobar")!)
