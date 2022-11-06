@@ -1,4 +1,4 @@
-import { createSignal, onMount } from "solid-js"
+import { createSignal, onMount, JSX, createEffect, onCleanup } from "solid-js"
 import { select } from 'proxy-live-document'
 
 export const Test = (props: {
@@ -10,9 +10,13 @@ export const Test = (props: {
     const [ keyValue, setKeyValue ] = createSignal(props.someGlobalState.key)
 
     onMount(() => {
-        select(props.someGlobalState, ['/key'], (root) => {
+        const selector = select(props.someGlobalState, ['/key'], (root) => {
             console.log("this should also run")
             setKeyValue(root.key)
+        })
+
+        onCleanup(() => {
+            selector.dispose()
         })
     })
 

@@ -25,10 +25,9 @@
     "vite-plugin-solid": "^2.3.0"
   },
   "peerDependencies": {
-    "proxy-live-document": "^1.1.0"
-  },
-  "dependencies": {
-    "react-solid-bridge": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "proxy-live-document": "^1.1.0",
     "solid-js": "^1.5.1"
   }
 }

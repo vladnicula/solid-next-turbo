@@ -14,9 +14,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-solid-bridge": "^1.0.1",
-    "solid-js": "^1.6.1",
-    "ui": "*",
-    "solidjs-exploration": "*"
+    "solidjs-exploration": "*",
+    "ui": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

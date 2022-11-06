@@ -1,2 +1,3 @@
 /* @refresh reload */
-export * from './Test'
+export { Test } from './Test'
+export { ReactInSolid } from './ReactInSolid'

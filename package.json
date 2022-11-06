@@ -20,10 +20,5 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {
-    "proxy-live-document": "^1.1.0",
-    "react-solid-bridge": "^1.0.1",
-    "solid-js": "^1.6.1"
-  },
   "packageManager": "npm@8.1.2"
 }

@@ -6,7 +6,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [
-    solidPlugin(),
+    solidPlugin({ssr: true}),
     dts({
       tsConfigFilePath: "tsconfig.build.json",
       insertTypesEntry: true,
